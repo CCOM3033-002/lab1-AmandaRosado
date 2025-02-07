@@ -50,15 +50,18 @@ int main ()
     cout << left << setw(30) << "Tickets de menores vendidos: " << right << setw(6) << ticket_menor << endl;
     cout << fixed << setprecision(2);
 
-    cout << "Esta es la cantidad generada en total por el cine ese dia: " << endl;
-    cout << "$" << gross_bop << "\n" << endl;
+
+    cout << left << setw(30) << "Beneficio bruto de taquilla: " << right << "$" << setw(8) << gross_bop << endl;
+
+    cout << left << setw(30) << "Cantidad que gano el cine en ventas: " << right << "$" << setw(8) << net_porcentaje << endl;
+    //cout << "Esta es la cantidad que gano el cine en ventas: " << endl;
+    //cout << "$" << net_porcentaje << "\n" << endl;
 
 
-    cout << "Esta es la cantidad generada para el distribuidor: " << endl;
+    cout << "Cantidad generada para el distribuidor: " << endl;
     cout << "$" << net_bop << "\n" << endl;
 
-    cout << "Esta es la cantidad que gano el cine en ventas: " << endl;
-    cout << "$" << net_porcentaje << "\n" << endl;
+
 
 
     return 0;
