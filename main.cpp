@@ -15,12 +15,13 @@ int main ()
     cout << "This program calculates the Gross and Net Box Office Profit and the Distributer's Profit of a movie playing in the theater." << endl;
 
 
-    int movie;
+    char movie;
+    double ticket_adulto;
 
     cout << "Entre el nombre de su pelicula: " << endl;
     cin >> movie;
+    
 
-    double ticket_adulto;
     cout << "Entre la cantidad de tickets de adultos vendidos: " << endl;
     cin >> ticket_adulto;
 
