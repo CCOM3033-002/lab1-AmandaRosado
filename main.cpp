@@ -36,15 +36,21 @@ int main ()
 
     double adulto_total = ticket_adulto * 10.0;
     double menor_total = ticket_menor * 6.0;
-    double gbop = adulto_total + menor_total;
-    double nbop = gbop - 20%;
+    
+    double gross_bop = adulto_total + menor_total;
+    double net_porcentaje = gross_bop * 0.20;
+    double net_bop = gross_bop - net_porcentaje;
 
     cout << "Esta es la cantidad generada en total por el cine ese dia: " << endl;
-    cout << "$" << gbop << ".00" << endl;
+    cout << "$" << gross_bop << ".00" << endl;
 
 
     cout << "Esta es la cantidad generada para el distribuidor: " << endl;
-    cout << "$" << nbop << ".00" << endl;
+    cout << "$" << net_bop << endl;
+
+    cout << "Esta es la cantidad que gano el cine en ventas: " << endl;
+    cout << "$" << net_porcentaje << endl;
+
 
     return 0;
 }
