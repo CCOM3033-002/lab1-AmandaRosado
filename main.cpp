@@ -44,12 +44,12 @@ int main ()
 
 
    
-    cout << "Nombre de pelicula: \"" << movie << "\"" << endl;
+    cout << left << setw(35) << "Nombre de pelicula: " << right << setw(6) << "\"" << movie << "\"" << endl;
 
 
-    cout << left << setw(30) << "Tickets de adultos vendidos: " << right << setw(6) << ticket_adulto << endl;
+    cout << left << setw(39) << "Tickets de adultos vendidos: " << right << setw(6) << ticket_adulto << endl;
 
-    cout << left << setw(30) << "Tickets de menores vendidos: " << right << setw(6) << ticket_menor << endl;
+    cout << left << setw(39) << "Tickets de menores vendidos: " << right << setw(6) << ticket_menor << endl;
 
     cout << fixed << setprecision(2);
 
