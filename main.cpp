@@ -15,14 +15,14 @@ int main ()
     cout << "This program calculates the Gross and Net Box Office Profit and the Distributer's Profit of a movie playing in the theater." << "\n" << endl;
 
 
-    char movie;
+    string movie;
     double ticket_adulto;
     double ticket_menor;
 
 
 
     cout << "Entre el nombre de su pelicula: " << endl;
-    cin >> movie;
+    getline(cin, movie);
     cout << "\n";
 
     cout << "Entre la cantidad de tickets de adultos vendidos: " << endl;
@@ -45,6 +45,10 @@ int main ()
 
    
     cout << "Nombre de pelicula: \"" << movie << "\"" << endl;
+
+    cout << left << setw(30) << "Tickets de adultos vendidos: " << right << setw(6) << ticket_adulto << endl;
+    cout << left << setw(30) << "Tickets de menores vendidos: " << right << setw(6) << ticket_menor << endl;
+    cout << fixed << setprecision(2);
 
     cout << "Esta es la cantidad generada en total por el cine ese dia: " << endl;
     cout << "$" << gross_bop << "\n" << endl;
