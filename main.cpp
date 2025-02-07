@@ -42,8 +42,12 @@ int main ()
     double net_bop = gross_bop - net_porcentaje;
 
 
+
+   
+    cout << "Nombre de pelicula: \"" << movie << "\"" << endl;
+
     cout << "Esta es la cantidad generada en total por el cine ese dia: " << endl;
-    cout << "$" << gross_bop << ".00" << "\n" << endl;
+    cout << "$" << gross_bop << "\n" << endl;
 
 
     cout << "Esta es la cantidad generada para el distribuidor: " << endl;
