@@ -46,22 +46,21 @@ int main ()
    
     cout << "Nombre de pelicula: \"" << movie << "\"" << endl;
 
+
     cout << left << setw(30) << "Tickets de adultos vendidos: " << right << setw(6) << ticket_adulto << endl;
+
     cout << left << setw(30) << "Tickets de menores vendidos: " << right << setw(6) << ticket_menor << endl;
+
     cout << fixed << setprecision(2);
 
 
-    cout << left << setw(30) << "Beneficio bruto de taquilla: " << right << "$" << setw(8) << gross_bop << endl;
+    cout << left << setw(40) << "Beneficio bruto de taquilla: " << right << "$" << setw(8) << gross_bop << endl;
 
-    cout << left << setw(30) << "Cantidad que gano el cine en ventas: " << right << "$" << setw(8) << net_porcentaje << endl;
-    //cout << "Esta es la cantidad que gano el cine en ventas: " << endl;
-    //cout << "$" << net_porcentaje << "\n" << endl;
+    cout << left << setw(39) << "Cantidad que gano el cine en ventas: " << right << " $" << setw(8) << net_porcentaje << endl;
 
+    cout << left << setw(30) << "Cantidad generada para el distribuidor: " << right << "$" << setw(8) << net_bop << endl;
 
-    cout << "Cantidad generada para el distribuidor: " << endl;
-    cout << "$" << net_bop << "\n" << endl;
-
-
+    
 
 
     return 0;
