@@ -1,5 +1,5 @@
 /*
-Asignación: Lab01
+Asignación: Lab01, Box Office
 Amanda Rosado Rosado
 Núm. Est: 801-23-8238
 Colaboraciones: 
